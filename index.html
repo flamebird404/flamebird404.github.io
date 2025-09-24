@@ -1,48 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #ff2500;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
-      padding: 20px;
-    }
-    .container {
-      max-width: 600px;
-      padding: 40px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin: 0 0 20px;
-      font-size: 2.5rem;
-      color: #3498db;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #7f8c8d;
-    }
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      p { font-size: 1rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are Rebuilding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .logo {
+            max-width: 80vw;
+            max-height: 50vh;
+            width: auto;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .message {
+            color: #ff2500;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-align: center;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .message {
+                font-size: 1.8rem;
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                max-width: 90vw;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .message {
+                font-size: 1.4rem;
+                letter-spacing: 0.05em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>We Are Rebuilding</h1>
-    <p>...</p>
-  </div>
+    <img src="logo.svg" alt="Logo" class="logo">
+    <h1 class="message">We Are Rebuilding</h1>
 </body>
-</html>   
+</html>
